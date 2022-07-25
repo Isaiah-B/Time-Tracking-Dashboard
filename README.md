@@ -9,7 +9,7 @@ This component should:
 - Respond to the device's screen size
 
 ### Links
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/time-tracking-dashboard-using-react-mpH8sYf8lN)
 - [Live Site](https://relaxed-gelato-13dfff.netlify.app/)
 
 ### Built with
