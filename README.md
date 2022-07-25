@@ -9,8 +9,8 @@ This component should:
 - Respond to the device's screen size
 
 ### Links
-[Solution]()
-[Live Site]()
+- [Solution]()
+- [Live Site](https://relaxed-gelato-13dfff.netlify.app/)
 
 ### Built with
 - React JS & JSX
