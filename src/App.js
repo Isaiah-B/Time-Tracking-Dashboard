@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import UserCard from "./components/UserCard";
+import Card from "./components/Card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+  const [timeframe, setTimeframe] = useState(['weekly', 'Last Week']);
+  const [data, setData] = useState(null);
+
+  const getData = async() => {
+    const res = await fetch('data.json'); 
+    setData(await res.json());
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+  
+  const changeTime = (time) => {
+    setTimeframe(time);
+  }
+
+  if (data) {
+    return (
+      <main className="main">
+        <div className="center">
+          <div className="container">
+            <UserCard name={'Jeremy Robson'} changeTime={changeTime}/>
+            {
+              data.map(d => <Card key={d.title} data={d} timeframe={timeframe}/>)
+            }
+          </div>
+        </div>
+      </main>
+    )
+  }
 }
 
 export default App;

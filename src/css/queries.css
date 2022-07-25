@@ -1,0 +1,135 @@
+/*************************/
+/* BELOW 1136px */
+/*************************/
+@media (max-width: 71em) {
+  html {
+    font-size: 50%
+  }
+
+  .card-top {
+    background-position: 13.8rem -2rem;
+  }
+}
+
+/*************************/
+/* BELOW 928px */
+/*************************/
+@media (max-width: 58em) {
+  html {
+    font-size: 41.6%
+  }
+
+  .card-top {
+    background-position: 14rem -2rem;
+    background-size: 36%;
+  }
+}
+
+/*************************/
+/* BELOW 752px */
+/*************************/
+@media (max-width: 47em) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    width: 70%;
+  }
+
+  .user-card {
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .user-top {
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+  }
+
+  .img-wrapper {
+    width: 10.6rem;
+    height: 10.6rem;
+  }
+
+  .user-heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  .categories {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .category-btn {
+    font-size: 2.6rem;
+  }
+
+  .card-top {
+    background-position: 80% -2rem;
+    background-size: 11rem;
+  }
+  
+  .card-top-row {
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 2.6rem;
+  }
+
+  .card-time {
+    font-size: 5.2rem;
+  }
+
+  .card-bottom {
+    width: 100%;
+  }
+
+}
+
+/*************************/
+/* BELOW 528px */
+/*************************/
+@media (max-width: 33em) {
+  .center {
+    height: initial;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    width: 85%;
+    padding: 10rem 0;
+  }
+
+  .user-card {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .user-top {
+    gap: 2.6rem;
+  }
+
+  .user-heading-primary {
+    font-size: 3.4rem;
+  }
+
+  .card-time-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-sub {
+    font-size: 2.2rem;
+  }
+
+  .card-top {
+    background-position: 90% -2rem;
+  }
+
+  .card-bottom {
+    padding: 4rem;
+  }
+}
